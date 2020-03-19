@@ -4,12 +4,12 @@
 基于SpringBoot2+实现的一个防止重复提交组件，支持多策略模式：ALL、POST、GET、NONE及兼容注解指定接口拦截或者不拦截，防止用户提交时重复点击导致重复数据。
 
 #### 软件架构
-1.基于SpringBoot2.0+上的组件
-2.基于拦截器Interceptor实现
-3.支持多种策略运行模式：ALL、POST、GET、NONE以及@Annotation自定义方式
-4.内置本地内存锁加锁，支持自定义其它锁实现，实现LockHandler接口并交给Spring管理即可，如：分布式锁
-5.内置默认拦截返回信息，支持自定义返回handler
-5.内置默认幂等标识(请求唯一标识): sessionId, 支持自定义，实现IdempotentUniquenessHandler接口交给Spring管理即可
+1.基于SpringBoot2.0+上的组件  
+2.基于拦截器Interceptor实现  
+3.支持多种策略运行模式：ALL、POST、GET、NONE以及@Annotation自定义方式  
+4.内置本地内存锁加锁，支持自定义其它锁实现，实现LockHandler接口并交给Spring管理即可，如：分布式锁  
+5.内置默认拦截返回信息，支持自定义返回handler  
+5.内置默认幂等标识(请求唯一标识): sessionId, 支持自定义，实现IdempotentUniquenessHandler接口交给Spring管理即可  
 
 #### 安装教程
 
