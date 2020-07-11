@@ -61,6 +61,10 @@
     ```
 3.  注意项目中不要存在其它继承WebMvcConfigurationSupport的配置，若有请修改为实现WebMvcConfigurer即可，否则拦截器可能不会生效
 
+4.  指定接口拦截或者不拦截
+    - @ExcludePreventRepeat：标识不拦截
+    - @PreventRepeat：标识不拦截
+
 #### 参与贡献
 
 1.  Fork 本仓库
