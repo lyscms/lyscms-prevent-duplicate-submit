@@ -60,6 +60,7 @@ public class PreventRepeatInterceptor extends HandlerInterceptorAdapter {
 
             //对获取锁失败的进行打回处理
             if (!lock) {
+                log.error("========================执行拦截器结束==========================");
                 responseHandler.handlerResponse(response);
                 return false;
             }
@@ -91,6 +92,7 @@ public class PreventRepeatInterceptor extends HandlerInterceptorAdapter {
 
             log.info("[Lyscms Prevent Repeat] url={}，method={}，idempotentId={}，unLock={}",
                     request.getRequestURI(), request.getMethod(), idempotentId, unLock);
+            log.info("========================执行拦截器成功结束==========================");
         }
     }
 }
