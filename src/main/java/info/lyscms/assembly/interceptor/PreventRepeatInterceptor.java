@@ -5,7 +5,6 @@ import info.lyscms.assembly.support.lock.LockHandler;
 import info.lyscms.assembly.support.qualifier.PreventQualifierHandler;
 import info.lyscms.assembly.support.response.ResponseHandler;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.method.HandlerMethod;
 import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.servlet.handler.HandlerInterceptorAdapter;
@@ -24,16 +23,16 @@ import javax.servlet.http.HttpServletResponse;
 @Slf4j
 public class PreventRepeatInterceptor extends HandlerInterceptorAdapter {
 
-    @Autowired
+    @Resource
     private PreventQualifierHandler preventQualifier;
 
-    @Autowired
+    @Resource
     private IdempotentUniquenessHandler idempotentUniquenessHandler;
 
-    @Autowired
+    @Resource
     private LockHandler lockHandler;
 
-    @Autowired
+    @Resource
     private ResponseHandler responseHandler;
 
 

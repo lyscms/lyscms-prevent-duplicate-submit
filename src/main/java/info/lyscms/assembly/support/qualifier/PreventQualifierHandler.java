@@ -3,7 +3,6 @@ package info.lyscms.assembly.support.qualifier;
 
 import info.lyscms.assembly.annotation.ExcludePreventRepeat;
 import info.lyscms.assembly.annotation.PreventRepeat;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.method.HandlerMethod;
 
 import javax.servlet.http.HttpServletRequest;
@@ -13,7 +12,7 @@ import javax.servlet.http.HttpServletRequest;
  */
 public class PreventQualifierHandler {
 
-    @Autowired
+    @Resource
     private PreventQualifier preventQualifier;
 
     /**
