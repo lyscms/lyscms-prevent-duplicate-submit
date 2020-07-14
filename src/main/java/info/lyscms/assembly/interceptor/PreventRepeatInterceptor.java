@@ -40,7 +40,7 @@ public class PreventRepeatInterceptor extends HandlerInterceptorAdapter {
     @Override
     public boolean preHandle(HttpServletRequest request, HttpServletResponse response,
                              Object handler) throws Exception {
-        log.info("========================执行拦截器了...==========================");
+
         if (handler instanceof HandlerMethod) {
             HandlerMethod handlerMethod = (HandlerMethod) handler;
 
@@ -48,6 +48,7 @@ public class PreventRepeatInterceptor extends HandlerInterceptorAdapter {
             if (!preventQualifier.globalIsPrevent(request, handlerMethod)) {
                 return true;
             }
+            log.info("========================执行拦截器了...==========================");
 
             //获取幂等唯一标识
             String idempotentId = idempotentUniquenessHandler.idempotentId(request, handlerMethod);
