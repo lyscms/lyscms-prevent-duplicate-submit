@@ -4,22 +4,31 @@
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
-        <artifactId>lyscms-public-componets</artifactId>
-        <groupId>com.lyscms.pub</groupId>
-        <version>1.0.0-SNAPSHOT</version>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>2.3.3.RELEASE</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
 
     <groupId>info.lyscms.assembly</groupId>
     <artifactId>lyscms-prevent-duplicate-submit</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>0.0.2</version>
     <name>lyscms-prevent-duplicate-submit</name>
 
     <dependencies>
         <dependency>
-            <groupId>com.lyscms.boot</groupId>
-            <artifactId>lyscms-starter-web</artifactId>
-            <version>1.0.0-SNAPSHOT</version>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
     </dependencies>
 </project>
