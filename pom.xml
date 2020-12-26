@@ -12,7 +12,7 @@
 
     <groupId>info.lyscms.assembly</groupId>
     <artifactId>lyscms-prevent-duplicate-submit</artifactId>
-    <version>0.0.2</version>
+    <version>0.0.2-SNAPSHOT</version>
     <name>lyscms-prevent-duplicate-submit</name>
 
     <dependencies>
