@@ -6,12 +6,12 @@ import info.lyscms.assembly.support.qualifier.PreventQualifierHandler;
 import info.lyscms.assembly.support.response.ResponseHandler;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.method.HandlerMethod;
+import org.springframework.web.servlet.HandlerInterceptor;
 import org.springframework.web.servlet.ModelAndView;
-import org.springframework.web.servlet.handler.HandlerInterceptorAdapter;
 
-import javax.annotation.Resource;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
+import jakarta.annotation.Resource;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
 
 /**
  * 阻止拦截器Handler
@@ -22,7 +22,7 @@ import javax.servlet.http.HttpServletResponse;
 
 
 @Slf4j
-public class PreventRepeatInterceptor extends HandlerInterceptorAdapter {
+public class PreventRepeatInterceptor implements HandlerInterceptor {
 
     @Resource
     private PreventQualifierHandler preventQualifier;

@@ -2,7 +2,7 @@ package info.lyscms.assembly.support.identifier;
 
 import org.springframework.web.method.HandlerMethod;
 
-import javax.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletRequest;
 
 /**
  * 幂等唯一标识

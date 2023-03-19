@@ -5,8 +5,8 @@ import info.lyscms.assembly.annotation.ExcludePreventRepeat;
 import info.lyscms.assembly.annotation.PreventRepeat;
 import org.springframework.web.method.HandlerMethod;
 
-import javax.annotation.Resource;
-import javax.servlet.http.HttpServletRequest;
+import jakarta.annotation.Resource;
+import jakarta.servlet.http.HttpServletRequest;
 
 /**
  * 定义阻止限定

@@ -2,7 +2,7 @@ package info.lyscms.assembly.support.qualifier;
 
 import org.springframework.web.method.HandlerMethod;
 
-import javax.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletRequest;
 
 /**
  * 定义阻止限定

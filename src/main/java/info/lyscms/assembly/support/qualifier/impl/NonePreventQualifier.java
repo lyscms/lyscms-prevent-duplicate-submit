@@ -3,7 +3,7 @@ package info.lyscms.assembly.support.qualifier.impl;
 import info.lyscms.assembly.support.qualifier.PreventQualifier;
 import org.springframework.web.method.HandlerMethod;
 
-import javax.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletRequest;
 
 
 /**

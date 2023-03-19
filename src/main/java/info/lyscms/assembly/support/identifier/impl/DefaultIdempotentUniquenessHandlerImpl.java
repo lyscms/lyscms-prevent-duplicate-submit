@@ -3,7 +3,7 @@ package info.lyscms.assembly.support.identifier.impl;
 import info.lyscms.assembly.support.identifier.IdempotentUniquenessHandler;
 import org.springframework.web.method.HandlerMethod;
 
-import javax.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletRequest;
 
 public class DefaultIdempotentUniquenessHandlerImpl implements IdempotentUniquenessHandler {
 

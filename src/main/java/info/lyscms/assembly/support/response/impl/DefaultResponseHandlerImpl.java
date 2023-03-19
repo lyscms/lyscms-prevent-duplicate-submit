@@ -2,7 +2,7 @@ package info.lyscms.assembly.support.response.impl;
 
 import info.lyscms.assembly.support.response.ResponseHandler;
 
-import javax.servlet.http.HttpServletResponse;
+import jakarta.servlet.http.HttpServletResponse;
 import java.io.PrintWriter;
 
 public class DefaultResponseHandlerImpl implements ResponseHandler {

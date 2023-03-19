@@ -1,7 +1,7 @@
 package info.lyscms.assembly.support.response;
 
 
-import javax.servlet.http.HttpServletResponse;
+import jakarta.servlet.http.HttpServletResponse;
 
 /**
  * 拦截响应处理
