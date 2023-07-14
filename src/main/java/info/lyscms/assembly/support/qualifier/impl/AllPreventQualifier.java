@@ -10,7 +10,7 @@ import jakarta.servlet.http.HttpServletRequest;
  * 所有均阻止
  *
  * @author sunkl
- * @date 2020/3/18 16:52
+ * @version 2020/3/18 16:52
  */
 public class AllPreventQualifier implements PreventQualifier {
     /**

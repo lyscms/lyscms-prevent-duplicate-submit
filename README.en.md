@@ -49,7 +49,7 @@
                      * @param method
                      * @return
                      * @author sunkl
-                     * @date 2020/3/18 17:23
+                     * @version 2020/3/18 17:23
                      */
                     @Override
                     public String idempotentId(HttpServletRequest request, HandlerMethod method) {

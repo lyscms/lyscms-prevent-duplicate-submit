@@ -12,7 +12,7 @@ public class DefaultResponseHandlerImpl implements ResponseHandler {
      * @param response
      * @throws Exception
      * @author sunkl
-     * @date 2020/3/18 17:45
+     * @version 2020/3/18 17:45
      */
     @Override
     public void handlerResponse(HttpServletResponse response) throws Exception {

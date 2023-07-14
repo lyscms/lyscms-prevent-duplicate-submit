@@ -21,7 +21,7 @@ public class PreventQualifierHandler {
      *
      * @return
      * @author sunkl
-     * @date 2020/3/19 18:34
+     * @version 2020/3/19 18:34
      */
     public boolean globalIsPrevent(HttpServletRequest request, HandlerMethod handlerMethod) {
         if (handlerMethod.hasMethodAnnotation(ExcludePreventRepeat.class)) {

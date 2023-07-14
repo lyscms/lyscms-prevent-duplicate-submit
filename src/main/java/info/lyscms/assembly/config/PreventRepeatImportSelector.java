@@ -38,7 +38,7 @@ public class PreventRepeatImportSelector implements ImportSelector {
      * @param strategy
      * @return
      * @author sunkl
-     * @date 2020/3/18 18:07
+     * @version 2020/3/18 18:07
      */
     private Class<?> chooseQualifierStrategy(PreventStrategy strategy) {
         Class<?> clazz = null;

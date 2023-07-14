@@ -4,7 +4,7 @@ package info.lyscms.assembly.support.lock;
  * 锁处理接口
  *
  * @author sunkl
- * @date 2020/3/18 17:31
+ * @version 2020/3/18 17:31
  */
 public interface LockHandler {
 
@@ -13,7 +13,7 @@ public interface LockHandler {
      *
      * @return
      * @author sunkl
-     * @date 2020/3/18 17:33
+     * @version 2020/3/18 17:33
      */
     boolean lock(String idempotentId);
 
@@ -22,7 +22,7 @@ public interface LockHandler {
      *
      * @return
      * @author sunkl
-     * @date 2020/3/18 17:32
+     * @version 2020/3/18 17:32
      */
     boolean unLock(String idempotentId);
 }

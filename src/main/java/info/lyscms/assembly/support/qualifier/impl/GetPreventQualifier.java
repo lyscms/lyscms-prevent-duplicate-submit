@@ -15,7 +15,7 @@ import java.util.Set;
  * 获取类型阻止
  *
  * @author sunkl
- * @date 2020/3/18 16:52
+ * @version 2020/3/18 16:52
  */
 public class GetPreventQualifier implements PreventQualifier, InitializingBean {
 
@@ -37,7 +37,7 @@ public class GetPreventQualifier implements PreventQualifier, InitializingBean {
      * 初始化请求类型
      *
      * @author sunkl
-     * @date 2020/3/18 17:01
+     * @version 2020/3/18 17:01
      */
     @Override
     public void afterPropertiesSet() {

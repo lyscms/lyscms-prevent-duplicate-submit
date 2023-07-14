@@ -10,15 +10,15 @@ import jakarta.servlet.http.HttpServletRequest;
  * 所有均不阻止
  *
  * @author sunkl
- * @date 2020/3/18 16:52
+ * @version 2020/3/18 16:52
  */
 public class NonePreventQualifier implements PreventQualifier {
     /**
      * 判定是否需要阻止提交
      *
-     * @param request
-     * @param handlerMethod
-     * @return
+     * @param request 请求对象
+     * @param handlerMethod 处理方法
+     * @return boolean
      */
     @Override
     public boolean isPrevent(HttpServletRequest request, HandlerMethod handlerMethod) {

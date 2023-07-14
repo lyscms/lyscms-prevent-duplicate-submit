@@ -15,7 +15,7 @@ import java.util.Set;
  * 提交类型提交阻止
  *
  * @author sunkl
- * @date 2020/3/18 16:52
+ * @version 2020/3/18 16:52
  */
 public class PostPreventQualifier implements PreventQualifier, InitializingBean {
 
@@ -37,7 +37,7 @@ public class PostPreventQualifier implements PreventQualifier, InitializingBean 
      * 初始化请求类型
      *
      * @author sunkl
-     * @date 2020/3/18 17:01
+     * @version 2020/3/18 17:01
      */
     @Override
     public void afterPropertiesSet() {

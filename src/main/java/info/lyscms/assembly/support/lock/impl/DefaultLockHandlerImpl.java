@@ -14,7 +14,7 @@ public class DefaultLockHandlerImpl implements LockHandler {
      *
      * @return
      * @author sunkl
-     * @date 2020/3/18 17:33
+     * @version 2020/3/18 17:33
      */
     @Override
     public boolean lock(String idempotentId) {
@@ -37,7 +37,7 @@ public class DefaultLockHandlerImpl implements LockHandler {
      *
      * @return
      * @author sunkl
-     * @date 2020/3/18 17:32
+     * @version 2020/3/18 17:32
      */
     @Override
     public boolean unLock(String idempotentId) {

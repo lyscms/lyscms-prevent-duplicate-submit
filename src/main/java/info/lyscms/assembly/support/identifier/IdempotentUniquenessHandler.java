@@ -8,7 +8,7 @@ import jakarta.servlet.http.HttpServletRequest;
  * 幂等唯一标识
  *
  * @author sunkl
- * @date 2020/3/18 17:22
+ * @version 2020/3/18 17:22
  */
 public interface IdempotentUniquenessHandler {
 
@@ -19,7 +19,7 @@ public interface IdempotentUniquenessHandler {
      * @param method
      * @return
      * @author sunkl
-     * @date 2020/3/18 17:23
+     * @version 2020/3/18 17:23
      */
     String idempotentId(HttpServletRequest request, HandlerMethod method);
 }
