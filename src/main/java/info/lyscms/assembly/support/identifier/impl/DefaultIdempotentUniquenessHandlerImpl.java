@@ -10,14 +10,14 @@ public class DefaultIdempotentUniquenessHandlerImpl implements IdempotentUniquen
     /**
      * 幂等唯一id
      *
-     * @param request
-     * @param method
+     * @param request 请求对象
+     * @param method  方法
      * @return
      * @author sunkl
      * @version 2020/3/18 17:23
      */
     @Override
     public String idempotentId(HttpServletRequest request, HandlerMethod method) {
-        return request.getSession().getId();
+        return request.getSession().getId() + "_" + request.getMethod() + "_" + request.getRequestURI();
     }
 }

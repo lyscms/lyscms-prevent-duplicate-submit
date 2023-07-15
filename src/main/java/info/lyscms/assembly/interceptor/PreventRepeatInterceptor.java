@@ -61,7 +61,7 @@ public class PreventRepeatInterceptor implements HandlerInterceptor {
 
             //对获取锁失败的进行打回处理
             if (!lock) {
-                log.error("========================执行拦截器结束==========================");
+                log.error("========================当前重复请求已经被拦截==========================");
                 responseHandler.handlerResponse(response);
                 return false;
             }

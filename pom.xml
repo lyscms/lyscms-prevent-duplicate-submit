@@ -19,7 +19,7 @@
 
     <groupId>info.lyscms.assembly</groupId>
     <artifactId>lyscms-prevent-duplicate-submit</artifactId>
-    <version>1.0.2</version>
+    <version>1.0.3</version>
     <name>lyscms-prevent-duplicate-submit</name>
 
     <!-- 仓库信息 -->
@@ -46,7 +46,7 @@
         </license>
     </licenses>
 
-    <!-- 中央仓库地址配置，不需要修改 -->
+    <!-- 中央仓库地址配置 -->
     <distributionManagement>
         <snapshotRepository>
             <id>ossrh</id>
