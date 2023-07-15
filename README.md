@@ -13,18 +13,15 @@
 
 #### 安装教程
 
-1.  下载源码
-2.  编译安装(install)到本地仓库或者发布(deploy)到私服
-3.  在项目中增加maven依赖
+1.  在项目中增加maven依赖
     ```xml
          <dependency>
             <groupId>info.lyscms.assembly</groupId>
             <artifactId>lyscms-prevent-duplicate-submit</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
-            <scope>compile</scope>
+            <version>1.0.2</version>
         </dependency>
     ```
-4.  在启动类上增加注解 @EnableLyscmsPreventRepeated(strategy = PreventStrategy.POST)   
+2.  在启动类上增加注解 @EnableLyscmsPreventRepeated(strategy = PreventStrategy.POST)   
     默认为POST，可设置：ALL、POST、GET、NONE
 
 #### 使用说明
