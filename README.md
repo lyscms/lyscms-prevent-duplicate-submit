@@ -59,7 +59,7 @@
 
 4.  指定接口拦截或者不拦截
     - @ExcludePreventRepeat：标识不拦截
-    - @PreventRepeat：标识不拦截
+    - @PreventRepeat：标识拦截
 
 #### 参与贡献
 
