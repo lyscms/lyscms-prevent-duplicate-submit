@@ -19,7 +19,7 @@ public class DefaultResponseHandlerImpl implements ResponseHandler {
         response.setStatus(HttpServletResponse.SC_FORBIDDEN);
         response.setContentType("application/json;charset=utf-8");
         PrintWriter writer = response.getWriter();
-        writer.write("{\"code\":1002,\"message:\":\"重复请求\",\"data\":null}");
+        writer.write("{\"code\":1002,\"message\":\"重复请求\",\"data\":null}");
         writer.flush();
         writer.close();
     }
